@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: inter;
+}
+:root{
+    --cor_inicial: #031521;
+    --cor_secundaria: #8AD31A;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--cor_inicial);
+}
+.header .header_links ul{
+    list-style-type: none;
+    display: inline-flex;
+}
+.header .header_links ul li a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.header .header_links ul li a:hover{
+    background-color: var(--cor_secundaria);
+    color: var(--cor_inicial);
+    padding: 4px;
+    border-radius: 2px;
+}
+.BG_Header {
+    width: 100%;
+    align-items: center;
+    position: relative;
+    overflow: hidden; 
+}
+
+.BG_Header img {
+    width: 100%;
+    z-index: 0;
+    box-sizing: border-box;
+}
+
+.BGH_text {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+    color: #fff;
+    top: 50%;
+    left: 30%;
+}
+.BGH_text h1{
+    max-width: 650px;
+    font-size: 64px;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+.BGH_text a{
+    background-color: var(--cor_secundaria);
+    text-decoration: none;
+    color: var(--cor_inicial);
+    padding: 10px 35px 10px 35px;
+    border-radius: 8px;
+}
+@media screen and (max-width: 700px){
+
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .header .header_links ul{
+        margin-top: 10px;
+    }
+    .BG_Header img{
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+    }
+    .BGH_text h1{
+        max-width: 385px;
+        font-size: 39px;
+        line-height: 25px;
+    }
+    .BGH_text a{
+        padding: 10px 35px 10px 35px;
+    }
+}

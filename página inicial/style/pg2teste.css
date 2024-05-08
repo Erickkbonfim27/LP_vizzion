@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: inter;
+}
+:root{
+    --cor_inicial: #031521;
+    --cor_secundaria: #8AD31A;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--cor_inicial);
+}
+.header .header_links ul{
+    list-style-type: none;
+    display: inline-flex;
+}
+.header .header_links ul li a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.header .header_links ul li a:hover{
+    background-color: var(--cor_secundaria);
+    color: var(--cor_inicial);
+    padding: 4px;
+    border-radius: 2px;
+}
+.BG_Header {
+    width: 100%;
+    position: relative;
+    overflow: hidden; 
+}
+
+.BG_Header img {
+    width: 100%;
+    z-index: 0;
+    box-sizing: border-box;
+}
+
+.BGH_text {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    z-index: 1; 
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: left; 
+}
+
+.BGH_text h1 { 
+    font-size: 4vw;
+    line-height: 0.9;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.BGH_text a {
+    background-color: var(--cor_secundaria);
+    text-decoration: none;
+    color: var(--cor_inicial);
+    padding: 10px 35px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.TitleFirsSection{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.5%;
+}
+.TitleFirsSection h1{
+    font-size: 56px;
+}
+.images {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.Detalhes_TFS {
+    width: 550px;
+    margin-top: -185px;
+    z-index: 0;
+    margin-left: -150px;
+}
+.Textos_TFS h1{
+    text-transform: uppercase;
+    line-height: 55px;
+    margin-bottom: 15px;
+}
+.Textos_TFS p{
+    width: 75%;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.Textos_TFS a{
+    background-color: var(--cor_secundaria);
+    text-decoration: none;
+    color: var(--cor_inicial);
+    padding: 10px 35px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.imagemLateral {
+    width: 550px;
+    z-index: 10;
+}
+
+.cards {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+.cards .VizzionFinder img{
+    
+}
+
+
+
+@media screen and (max-width: 700px){
+
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .header .header_links ul{
+        margin-top: 10px;
+    }
+    .BG_Header img{
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+    }
+    .BGH_text h1{
+        width: 400px !important;
+        line-height: 1;
+        font-size: 30px;
+        font-size: 40px;
+        margin-left: 10%;
+        margin-bottom: 28px;
+    }
+    .BGH_text a{
+        margin-left: 10%;
+        font-weight: 600;
+        padding: 7px 30px; 
+    }
+    .TitleFirsSection{
+        width: 90%;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 3.5%;
+        flex-direction: column;
+    }
+    .imagemLateral {
+        width: 370px;
+        z-index: 10;
+    }
+    .images {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-left: 80px;
+        margin-top: 10%;
+    }
+    .Detalhes_TFS {
+        width: 370px;
+        margin-top: -140px;
+        margin-left: -50px;
+        overflow: hidden;
+
+    }
+    .Textos_TFS h1{
+        font-size: 32px;
+        line-height: 28px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    .Textos_TFS p{
+        width: 95%;
+    }
+    .Textos_TFS a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--cor_secundaria);
+        text-decoration: none;
+        color: var(--cor_inicial);
+        padding: 10px 35px;
+        border-radius: 8px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
